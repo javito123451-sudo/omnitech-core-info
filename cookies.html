@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de cookies — OmniTech Core</title>
+<meta name="description" content="Política de cookies de OmniTech Core.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://info.omnitech-core.com/cookies.html">
+<style>
+:root{
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --bg:#020617; --surface:#0f172a; --border:rgba(148,163,184,.16);
+  --text:#f8fafc; --text-secondary:#cbd5e1; --text-muted:#94a3b8; --text-faint:#64748b;
+  --dark:#020617; --dark-text-muted:#94a3b8;
+  --primary:#6366f1; --primary-600:#4f46e5; --accent:#7c3aed;
+  --gradient-brand: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+}
+*,*::before,*::after{ box-sizing:border-box; }
+body{ margin:0; background:var(--bg); color:var(--text); font-family:var(--font-sans); line-height:1.7; }
+a{ color:#a5b4fc; }
+.container{ max-width:820px; margin:0 auto; padding:0 24px; }
+header.site-header{ border-bottom:1px solid var(--border); background:#0b1220; }
+.nav{ display:flex; align-items:center; justify-content:space-between; height:72px; max-width:1180px; margin:0 auto; padding:0 24px; }
+.brand{ display:flex; align-items:center; gap:10px; font-weight:700; text-decoration:none; color:var(--text); }
+.brand-mark{ width:34px; height:34px; display:block; object-fit:contain; }
+.brand-text{ display:flex; flex-direction:column; line-height:1.05; }
+.brand-text b{ font-size:15px; } .brand-text span{ font-size:11px; color:var(--text-faint); font-weight:600; }
+.back-link{ font-size:14px; font-weight:600; text-decoration:none; color:#a5b4fc; }
+main{ padding:56px 0 80px; }
+h1{ font-size:1.9rem; margin:0 0 8px; letter-spacing:-0.02em; }
+.updated{ color:var(--text-faint); font-size:13px; margin-bottom:36px; }
+h2{ font-size:1.2rem; margin:32px 0 10px; }
+p, li{ color:var(--text-secondary); font-size:15px; }
+.placeholder-box{ background:rgba(245,158,11,.12); border:1px solid rgba(245,158,11,.35); color:#fcd34d; padding:16px 18px; border-radius:10px; font-size:13.5px; margin-bottom:32px; }
+.card{ background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:24px; margin-top:24px; }
+footer.site-footer{ background:#000; color:var(--dark-text-muted); padding:32px 0; margin-top:40px; font-size:13px; }
+footer.site-footer .container{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+footer.site-footer a{ color:var(--dark-text-muted); }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="logo.png" alt="" aria-hidden="true">
+      <span class="brand-text"><b>OmniTech Core</b><span>Sistema Operativo Empresarial</span></span>
+    </a>
+    <a href="index.html" class="back-link">&larr; Volver a la web</a>
+  </div>
+</header>
+<main>
+  <div class="container">
+<div class="placeholder-box">Esta página es una plantilla base. El contenido legal definitivo debe ser redactado o revisado por un profesional (asesoría legal) antes de publicarse.</div>
+    <h1>Política de cookies</h1>
+    <p class="updated">Última actualización: pendiente de definir</p>
+    
+    <h2>1. ¿Qué son las cookies?</h2>
+    <p>Pequeños archivos que se almacenan en tu dispositivo al visitar esta web.</p>
+    <h2>2. Cookies que utilizamos</h2>
+    <p>[Detallar: cookies técnicas necesarias, analíticas, de personalización o publicitarias, según se implementen.]</p>
+    <h2>3. Cómo gestionar las cookies</h2>
+    <p>Puedes configurar tu navegador para rechazar todas las cookies o para que te avise cuando se envíe una cookie.</p>
+    <h2>4. Panel de configuración de cookies</h2>
+    <p>[Aquí se integrará el banner/panel real de gestión de consentimiento de cookies cuando esté implementado.]</p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; <span id="year"></span> OmniTech Core. Todos los derechos reservados.</span>
+    <span><a href="index.html">omnitech-core.com</a></span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
