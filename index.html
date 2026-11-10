@@ -695,6 +695,8 @@
     color:var(--text-faint);
   }
   .closing-banner p b{ color:var(--text); }
+  .sticky-diag{ display:none; position:fixed; bottom:16px; left:16px; right:80px; z-index:40; }
+  @media (max-width:768px){ .sticky-diag{ display:block; } }
 </style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
@@ -745,7 +747,7 @@
   <div class="container">
     <nav class="nav" aria-label="Navegación principal">
       <a href="#top" class="brand">
-        <img class="brand-mark" src="logo.png" width="34" height="34" alt="Panel CRM OmniTech Core con leads, facturas y conversaciones IA" aria-hidden="true">
+        <img class="brand-mark" src="logo.png" width="34" height="34" alt="" aria-hidden="true">
         <span class="brand-text"><b>OmniTech</b><span>Core Platform</span></span>
       </a>
       <ul class="nav-links">
@@ -1423,7 +1425,7 @@
   });
 </script>
 
-<div class="fixed bottom-4 left-4 right-20 z-40 md:hidden" style="position:fixed; bottom:16px; left:16px; right:80px; z-index:40;">
+<div class="sticky-diag">
   <a href="#leadForm" style="display:block; background:#7c3aed; color:white; text-align:center; padding:14px; border-radius:12px; font-weight:700; text-decoration:none;">
     Solicitar diagnóstico →
   </a>
