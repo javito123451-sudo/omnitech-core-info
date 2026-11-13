@@ -101,7 +101,8 @@
       var fd = new FormData(form);
       var payload = {
         nombre: fd.get('nombre'), empresa: fd.get('empresa'), email: fd.get('email'),
-        telefono: fd.get('telefono') || '', consentimientoWhatsapp: fd.get('consentimientoWhatsapp') === 'yes',\n        necesidad: 'Solicita prueba de 7 días; requiere revisión comercial manual. Quiere resolver primero: ' + fd.get('quiero') + '.'
+        telefono: fd.get('telefono') || '', consentimientoWhatsapp: fd.get('consentimientoWhatsapp') === 'yes',
+        necesidad: 'Solicita prueba de 7 días; requiere revisión comercial manual. Quiere resolver primero: ' + fd.get('quiero') + '.'
       };
       btn.disabled = true; btn.textContent = 'Enviando…';
       try {
