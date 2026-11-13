@@ -541,6 +541,10 @@
   .form-msg{ display:none; align-items:center; gap:10px; padding:13px 16px; border-radius:10px; font-size:14px; margin-bottom:16px; }
   .form-msg.success{ display:flex; background:var(--success-bg); color:var(--success-text); }
   .form-msg.error{ display:flex; background:var(--danger-bg); color:var(--danger-text); }
+  .interest-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .interest-option{ display:flex!important; align-items:center; gap:8px; padding:10px 12px; border:1px solid var(--border); border-radius:9px; color:var(--text-secondary)!important; font-size:13px!important; cursor:pointer; }
+  .interest-option input{ width:auto!important; flex:0 0 auto; margin:0; }
+  @media(max-width:560px){ .interest-grid{ grid-template-columns:1fr; } }
   @media (max-width: 900px){ .form-wrap{ grid-template-columns:1fr; } .field-row{ grid-template-columns:1fr; } }
 
   /* ============================================================
@@ -1228,8 +1232,8 @@
           </div>
           <fieldset class="interest-field" style="border:0;padding:0;margin:0 0 18px;">
             <legend style="font-size:13px;font-weight:600;color:var(--text-secondary);margin-bottom:9px;">¿Qué áreas te gustaría valorar? <span style="color:var(--text-faint);font-weight:400;">(opcional, puedes elegir varias)</span></legend>
-            <div class="interest-grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;">
-              <label class="interest-option" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--border);border-radius:9px;color:var(--text-secondary);font-size:13px;"><input style="width:auto;flex:0 0 auto;margin:0;" type="checkbox" name="intereses" value="CRM y gestión de clientes"> CRM y gestión de clientes</label>
+            <div class="interest-grid">
+              <label class="interest-option"><input type="checkbox" name="intereses" value="CRM y gestión de clientes"> CRM y gestión de clientes</label>
               <label class="interest-option"><input type="checkbox" name="intereses" value="Presupuestos y facturación"> Presupuestos y facturación</label>
               <label class="interest-option"><input type="checkbox" name="intereses" value="Agenda y gestión de servicios"> Agenda y gestión de servicios</label>
               <label class="interest-option"><input type="checkbox" name="intereses" value="WhatsApp y comunicación"> WhatsApp y comunicación</label>
