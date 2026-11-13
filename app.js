@@ -68,6 +68,26 @@
   }
   var form = $('#trialForm');
   if (form) {
+    // Datos de contacto y consentimiento explícito para WhatsApp.
+    var phoneLabel = document.createElement('label');
+    phoneLabel.textContent = 'Móvil (opcional)';
+    phoneLabel.style.cssText = 'display:block;margin-top:14px;font-weight:600;';
+    var phoneInput = document.createElement('input');
+    phoneInput.type = 'tel'; phoneInput.name = 'telefono'; phoneInput.autocomplete = 'tel';
+    phoneInput.placeholder = '+34 600 000 000';
+    phoneInput.style.cssText = 'display:block;width:100%;margin-top:6px;padding:12px;border:1px solid #d5d9e2;border-radius:8px;';
+    phoneLabel.appendChild(phoneInput);
+    var consentLabel = document.createElement('label');
+    consentLabel.style.cssText = 'display:flex;gap:10px;align-items:flex-start;margin:12px 0;font-size:14px;line-height:1.45;';
+    var consentInput = document.createElement('input');
+    consentInput.type = 'checkbox'; consentInput.name = 'consentimientoWhatsapp'; consentInput.value = 'yes';
+    consentInput.style.cssText = 'margin-top:3px;flex:0 0 auto;';
+    var consentText = document.createElement('span');
+    consentText.textContent = 'Acepto recibir por WhatsApp mensajes relacionados con mi solicitud y la confirmación de la cita de diagnóstico. Puedo retirar mi consentimiento cuando quiera.';
+    consentLabel.appendChild(consentInput); consentLabel.appendChild(consentText);
+    var submitButton = $('button[type=submit]', form);
+    form.insertBefore(phoneLabel, submitButton);
+    form.insertBefore(consentLabel, submitButton);
     var ok = $('#trialOk'), err = $('#trialErr'), btn = $('button[type=submit]', form), btnHtml = btn.innerHTML;
     var map = { facturacion: 'Facturación y cobros', inspecciones: 'Inspecciones y docs', todo: 'Todo integrado' };
     try {
@@ -81,6 +101,7 @@
       var fd = new FormData(form);
       var payload = {
         nombre: fd.get('nombre'), empresa: fd.get('empresa'), email: fd.get('email'),
+        telefono: fd.get('telefono') || '', consentimientoWhatsapp: fd.get('consentimientoWhatsapp') === 'yes',
         necesidad: 'Solicita prueba de 7 días; requiere revisión comercial manual. Quiere resolver primero: ' + fd.get('quiero') + '.'
       };
       btn.disabled = true; btn.textContent = 'Enviando…';
