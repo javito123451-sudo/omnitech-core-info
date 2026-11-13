@@ -3,26 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAFAFB">
 <title>Embudos y Pipelines | OmniTech Core</title>
 <meta name="description" content="Visualiza en qué fase está cada oportunidad de venta, de un vistazo. Parte del Sistema Operativo Empresarial con IA de OmniTech Core.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://info.omnitech-core.com/embudos-y-pipelines">
-<link rel="icon" type="image/png" href="/favicon.png">
-
+<link rel="icon" type="image/png" href="/logo.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OmniTech Core">
+<meta property="og:locale" content="es_ES">
 <meta property="og:title" content="Embudos y Pipelines | OmniTech Core">
 <meta property="og:description" content="Visualiza en qué fase está cada oportunidad de venta, de un vistazo. Parte del Sistema Operativo Empresarial con IA de OmniTech Core.">
 <meta property="og:url" content="https://info.omnitech-core.com/embudos-y-pipelines">
 <meta property="og:image" content="https://info.omnitech-core.com/og-image.jpg">
-<meta property="og:locale" content="es_ES">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OmniTech Core, software de gestión empresarial con IA">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Embudos y Pipelines | OmniTech Core">
 <meta name="twitter:description" content="Visualiza en qué fase está cada oportunidad de venta, de un vistazo. Parte del Sistema Operativo Empresarial con IA de OmniTech Core.">
 <meta name="twitter:image" content="https://info.omnitech-core.com/og-image.jpg">
-
-<link rel="stylesheet" href="/assets/module.css">
-
+<meta name="twitter:image:alt" content="OmniTech Core, software de gestión empresarial con IA">
+<link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,9 +50,9 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "¿Es gratis probarlo?", "acceptedAnswer": { "@type": "Answer", "text": "Puedes solicitar un diagnóstico empresarial gratuito y sin compromiso para ver cómo encajaría este módulo en tu operativa." } },
+        { "@type": "Question", "name": "¿Es gratis probarlo?", "acceptedAnswer": { "@type": "Answer", "text": "Puedes solicitar una prueba gratuita de 7 días, sin tarjeta y sin compromiso para ver cómo encajaría este módulo en tu operativa." } },
         { "@type": "Question", "name": "¿Se puede usar junto con el resto de OmniTech Core?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Todos los módulos comparten los mismos datos de clientes y procesos — no es una herramienta aislada." } },
-        { "@type": "Question", "name": "¿En qué plan está incluido?", "acceptedAnswer": { "@type": "Answer", "text": "Este módulo está disponible desde el plan Professional. Consulta el detalle completo de cada plan en la sección de precios." } },
+        { "@type": "Question", "name": "¿En qué plan está incluido?", "acceptedAnswer": { "@type": "Answer", "text": "La disponibilidad se define en la propuesta personalizada según las necesidades de tu empresa." } },
         { "@type": "Question", "name": "¿Necesito conocimientos técnicos para usarlo?", "acceptedAnswer": { "@type": "Answer", "text": "No. La implantación viene acompañada y formamos a tu equipo durante el arranque." } }
       ]
     }
@@ -59,138 +61,64 @@
 </script>
 </head>
 <body>
-
+<a class="skip-link" href="#main">Saltar al contenido</a>
 <header class="site-header">
   <div class="container nav">
-    <a href="/#top" class="brand">
-      <img class="brand-mark" src="/logo.png" alt="" aria-hidden="true">
-      <span class="brand-text"><b>OmniTech</b><span>Core Platform</span></span>
-    </a>
-    <a href="/#funciones" class="back">← Todos los módulos</a>
+    <a class="brand" href="/"><img src="/logo.svg" width="32" height="32" alt=""><span>OmniTech Core</span></a>
+    <nav class="nav-links" aria-label="Principal"><a href="/">Inicio</a><a href="/facturacion-y-cobros">Facturación y cobros</a><a href="/inspecciones">Inspecciones</a><a href="/demo">Demo en vivo</a><a href="/precios">Precios</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm" href="/precios#prueba">Probar gratis</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobilePanel" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
   </div>
+  <nav class="mobile-panel" id="mobilePanel" aria-label="Menú móvil"><a href="/">Inicio</a><a href="/facturacion-y-cobros">Facturación y cobros</a><a href="/inspecciones">Inspecciones</a><a href="/demo">Demo en vivo</a><a href="/precios">Precios</a></nav>
 </header>
-
-<section class="hero">
-  <div class="container">
-    <span class="eyebrow">Módulo de OmniTech Core</span>
-    <h1>Embudos y Pipelines</h1>
-    <p class="lead">Visualiza en qué fase está cada oportunidad de venta, de un vistazo.</p>
-    <a href="/?interes=Embudos%20y%20Pipelines#contacto" class="btn btn-primary btn-lg">Solicita tu diagnóstico →</a>
-  </div>
-</section>
-
-<main>
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Qué incluye</span>
-        <h2>Todo lo que necesitas para embudos y pipelines</h2>
-      </div>
-      <div class="benefit-grid">
-        <div class="card benefit-card">
-          <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span>Embudos personalizables a las fases reales de tu proceso de venta</span>
-        </div>
-        <div class="card benefit-card">
-          <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span>Arrastra y suelta oportunidades entre fases</span>
-        </div>
-        <div class="card benefit-card">
-          <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span>Detecta cuellos de botella: dónde se atascan más oportunidades</span>
-        </div>
-        <div class="card benefit-card">
-          <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span>Previsión de ingresos basada en el pipeline real</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Cómo funciona</span>
-        <h2>De la solicitud a la implantación</h2>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <h3>Cuéntanos tu reto</h3>
-          <p>Solicita un diagnóstico gratuito y cuéntanos qué te gustaría organizar o automatizar.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <h3>Te proponemos cómo encajaría</h3>
-          <p>Te mostramos cómo se configuraría este módulo en tu operativa concreta.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <h3>Implantación acompañada</h3>
-          <p>Te acompañamos en la puesta en marcha y formamos a tu equipo.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Preguntas frecuentes</span>
-        <h2>Todo lo que quieras saber</h2>
-      </div>
-      <div class="faq-item"><h3>¿Es gratis probarlo?</h3><p>Puedes solicitar un diagnóstico empresarial gratuito y sin compromiso para ver cómo encajaría este módulo en tu operativa.</p></div>
-      <div class="faq-item"><h3>¿Se puede usar junto con el resto de OmniTech Core?</h3><p>Sí. Todos los módulos comparten los mismos datos de clientes y procesos — no es una herramienta aislada.</p></div>
-      <div class="faq-item"><h3>¿En qué plan está incluido?</h3><p>Este módulo está disponible desde el plan Professional. Consulta el detalle completo de cada plan en la sección de precios.</p></div>
-      <div class="faq-item"><h3>¿Necesito conocimientos técnicos para usarlo?</h3><p>No. La implantación viene acompañada y formamos a tu equipo durante el arranque.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="cta-final">
-        <h2>¿Listo para organizar tu empresa?</h2>
-        <p>Solicita un diagnóstico empresarial gratuito y descubre cómo encajaría Embudos y Pipelines en tu operativa.</p>
-        <div class="cta-actions">
-          <a href="https://wa.me/34677966378" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">Hablar por WhatsApp</a>
-          <a href="/?interes=Embudos%20y%20Pipelines#contacto" class="btn btn-outline btn-lg">Solicita tu diagnóstico</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-head" style="margin-bottom:20px;">
-        <h2>Otros módulos de OmniTech Core</h2>
-      </div>
-      <div class="related">
-        <a href="/#funciones">Todos los módulos</a>
-      <a href="/crm-inteligente">CRM Inteligente</a>
-      <a href="/comunicacion-centralizada">Comunicación Centralizada</a>
-      <a href="/automatizacion">Automatización</a>
-      <a href="/agenda-inteligente">Agenda Inteligente</a>
-      <a href="/gestion-de-procesos">Gestión de Procesos</a>
-      <a href="/marketing-inteligente">Marketing Inteligente</a>
-      <a href="/gestion-de-proyectos">Gestión de Proyectos</a>
-      <a href="/analytics-avanzado">Analytics Avanzado</a>
-      <a href="/base-de-conocimiento">Base de Conocimiento</a>
-      <a href="/recursos-humanos">Recursos Humanos</a>
-      </div>
-    </div>
-  </section>
+<main id="main">
+<section class="hero-page"><div class="container narrow">
+  <nav class="breadcrumb" aria-label="Migas de pan"><a href="/">Inicio</a> / <a href="/precios#modulos">Módulos</a> / Embudos y Pipelines</nav>
+  <p class="eyebrow">Módulo de OmniTech Core</p>
+  <h1>Embudos y Pipelines</h1>
+  <p class="lead">Visualiza en qué fase está cada oportunidad de venta, de un vistazo.</p>
+  <div class="hero-actions"><a class="btn btn-primary btn-lg" href="/precios?quiero=todo#prueba">Probar gratis 7 días</a><a class="btn btn-secondary btn-lg" href="/demo">Probar demo en vivo</a></div>
+</div></section>
+<section class="section"><div class="container narrow">
+  <div class="section-head"><p class="eyebrow">Qué incluye</p><h2>Todo lo que necesitas para embudos y pipelines</h2></div>
+  <ul class="checks"><li>Embudos personalizables a las fases reales de tu proceso de venta</li><li>Arrastra y suelta oportunidades entre fases</li><li>Detecta cuellos de botella: dónde se atascan más oportunidades</li><li>Previsión de ingresos basada en el pipeline real</li></ul>
+</div></section>
+<section class="section section-alt"><div class="container">
+  <div class="section-head"><p class="eyebrow">Cómo funciona</p><h2>De la prueba a la implantación</h2></div>
+  <ol class="steps steps-3">
+    <li class="step"><span class="step-n">01</span><h3>Activa tu prueba</h3><p>Pide tu prueba gratuita de 7 días y cuéntanos qué quieres resolver primero.</p></li>
+    <li class="step"><span class="step-n">02</span><h3>Te mostramos cómo encajaría</h3><p>Te enseñamos cómo se configuraría este módulo en tu operativa concreta.</p></li>
+    <li class="step"><span class="step-n">03</span><h3>Implantación acompañada</h3><p>Te acompañamos en la puesta en marcha y formamos a tu equipo.</p></li>
+  </ol>
+</div></section>
+<section class="section"><div class="container narrow">
+  <div class="section-head"><p class="eyebrow">Preguntas frecuentes</p><h2>Todo lo que quieras saber</h2></div>
+  <div class="faq-item"><h3>¿Es gratis probarlo?</h3><p>Puedes solicitar una prueba gratuita de 7 días, sin tarjeta y sin compromiso para ver cómo encajaría este módulo en tu operativa.</p></div><div class="faq-item"><h3>¿Se puede usar junto con el resto de OmniTech Core?</h3><p>Sí. Todos los módulos comparten los mismos datos de clientes y procesos — no es una herramienta aislada.</p></div><div class="faq-item"><h3>¿En qué plan está incluido?</h3><p>La disponibilidad se define en la propuesta personalizada según las necesidades de tu empresa.</p></div><div class="faq-item"><h3>¿Necesito conocimientos técnicos para usarlo?</h3><p>No. La implantación viene acompañada y formamos a tu equipo durante el arranque.</p></div>
+</div></section>
+<section class="section-tight"><div class="container"><div class="cta-band">
+  <h2>¿Listo para organizar tu empresa?</h2><p>Activa tu prueba gratuita de 7 días y descubre cómo encajaría Embudos y Pipelines en tu operativa.</p>
+  <div class="cta-actions"><a class="btn btn-primary btn-lg" href="/precios?quiero=todo#prueba">Probar gratis 7 días</a><a class="btn btn-secondary btn-lg" href="/demo">Probar demo en vivo</a></div>
+</div></div></section>
+<section class="section-tight"><div class="container"><div class="section-head"><h2>Otros módulos de OmniTech Core</h2></div><div class="mod-grid"><a class="mod" href="/crm-inteligente">CRM Inteligente</a><a class="mod" href="/comunicacion-centralizada">Comunicación Centralizada</a><a class="mod" href="/automatizacion">Automatización</a><a class="mod" href="/agenda-inteligente">Agenda Inteligente</a><a class="mod" href="/gestion-de-procesos">Gestión de Procesos</a><a class="mod" href="/marketing-inteligente">Marketing Inteligente</a><a class="mod" href="/gestion-de-proyectos">Gestión de Proyectos</a><a class="mod" href="/analytics-avanzado">Analytics Avanzado</a><a class="mod" href="/base-de-conocimiento">Base de Conocimiento</a><a class="mod" href="/recursos-humanos">Recursos Humanos</a></div></div></section>
 </main>
-
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <span>© 2026 OmniTech Core. Todos los derechos reservados.</span>
-    <span>
-      <a href="/privacidad.html">Privacidad</a> ·
-      <a href="/terminos.html">Términos</a> ·
-      <a href="/cookies.html">Cookies</a>
-    </span>
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="/"><img src="/logo.svg" width="32" height="32" alt=""><span>OmniTech Core</span></a>
+      <p>OmniTech Core es un software de gestión empresarial con inteligencia artificial diseñado para empresas y pymes que quieren centralizar clientes, procesos, comunicación y operaciones.</p>
+    </div>
+    <nav aria-label="Producto"><p class="footer-title">Producto</p><ul>
+      <li><a href="/facturacion-y-cobros">Facturación y cobros</a></li><li><a href="/inspecciones">Inspecciones laborales</a></li>
+      <li><a href="/demo">Demo en vivo</a></li><li><a href="/precios">Precios y módulos</a></li></ul></nav>
+    <nav aria-label="Legal"><p class="footer-title">Legal</p><ul>
+      <li><a href="/privacidad.html">Política de privacidad</a></li><li><a href="/terminos.html">Términos</a></li><li><a href="/cookies.html">Cookies</a></li></ul></nav>
+    <div><p class="footer-title">Contacto</p><ul>
+      <li><a href="https://wa.me/34677966378">WhatsApp</a></li><li>hola@omnitechcore.com</li><li><a href="/precios#prueba">Probar gratis 7 días</a></li></ul></div>
   </div>
+  <div class="container footer-bottom">© <span id="year">2026</span> OmniTech Core. Todos los derechos reservados.</div>
 </footer>
-
+<script src="/app.js" defer></script>
 </body>
 </html>

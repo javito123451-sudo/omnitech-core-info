@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAFAFB">
+<title>Demo en vivo de facturación, cobros e inspecciones | OmniTech Core</title>
+<meta name="description" content="Prueba sin registro los simuladores de OmniTech Core: recordatorios de cobro, seguimiento de clientes potenciales y expediente de inspección laboral.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://info.omnitech-core.com/demo">
+<link rel="icon" type="image/png" href="/logo.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OmniTech Core">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Demo en vivo de facturación, cobros e inspecciones | OmniTech Core">
+<meta property="og:description" content="Prueba sin registro los simuladores de OmniTech Core: recordatorios de cobro, seguimiento de clientes potenciales y expediente de inspección laboral.">
+<meta property="og:url" content="https://info.omnitech-core.com/demo">
+<meta property="og:image" content="https://info.omnitech-core.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OmniTech Core, software de gestión empresarial con IA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Demo en vivo de facturación, cobros e inspecciones | OmniTech Core">
+<meta name="twitter:description" content="Prueba sin registro los simuladores de OmniTech Core: recordatorios de cobro, seguimiento de clientes potenciales y expediente de inspección laboral.">
+<meta name="twitter:image" content="https://info.omnitech-core.com/og-image.jpg">
+<meta name="twitter:image:alt" content="OmniTech Core, software de gestión empresarial con IA">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://info.omnitech-core.com/demo#webpage",
+      "url": "https://info.omnitech-core.com/demo",
+      "name": "Demo en vivo de OmniTech Core",
+      "description": "Prueba sin registro los simuladores de OmniTech Core: recordatorios de cobro, seguimiento de clientes potenciales y expediente de inspección laboral.",
+      "inLanguage": "es-ES",
+      "isPartOf": {
+        "@id": "https://info.omnitech-core.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://info.omnitech-core.com/demo#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://info.omnitech-core.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Demo en vivo",
+          "item": "https://info.omnitech-core.com/demo"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/"><img src="/logo.svg" width="32" height="32" alt=""><span>OmniTech Core</span></a>
+    <nav class="nav-links" aria-label="Principal"><a href="/">Inicio</a><a href="/facturacion-y-cobros">Facturación y cobros</a><a href="/inspecciones">Inspecciones</a><a href="/demo" aria-current="page">Demo en vivo</a><a href="/precios">Precios</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm" href="/precios#prueba">Probar gratis</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobilePanel" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-panel" id="mobilePanel" aria-label="Menú móvil"><a href="/">Inicio</a><a href="/facturacion-y-cobros">Facturación y cobros</a><a href="/inspecciones">Inspecciones</a><a href="/demo">Demo en vivo</a><a href="/precios">Precios</a></nav>
+</header>
+<main id="main">
+<section class="hero-page"><div class="container narrow">
+  <nav class="breadcrumb" aria-label="Migas de pan"><a href="/">Inicio</a> / Demo en vivo</nav>
+  <h1>Demo en vivo: pruébalo sin registrarte</h1>
+  <p class="lead">Elige qué quieres ver: cobros en piloto automático o una inspección de trabajo simulada. Todo funciona en tu navegador.</p>
+</div></section>
+<section class="section-tight"><div class="container">
+  <div class="tabs" role="tablist" aria-label="Elige la demo" style="margin-bottom:20px">
+    <button role="tab" id="tab-demo-fact" aria-selected="true" data-target="demo-fact" type="button">Facturación y cobros</button>
+    <button role="tab" id="tab-demo-insp" aria-selected="false" data-target="demo-insp" type="button">Inspecciones</button>
+  </div>
+  <div id="demo-fact" role="tabpanel" aria-labelledby="tab-demo-fact"><div class="sim" data-sim="fact">
+  <div class="sim-top">
+    <div class="tabs" role="tablist" aria-label="Qué quieres simular">
+      <button role="tab" id="tab-fact-inv" aria-selected="true" data-target="fact-inv" type="button">Facturas por cobrar</button>
+      <button role="tab" id="tab-fact-leads" aria-selected="false" data-target="fact-leads" type="button">Clientes potenciales</button>
+    </div>
+    <button class="link-btn" type="button" data-action="reset">Restablecer demo</button>
+  </div>
+  <div id="fact-inv" role="tabpanel" aria-labelledby="tab-fact-inv">
+    <div class="sim-kpis" data-kpis="inv"></div>
+    <div class="sim-grid">
+      <ul class="sim-list" data-list="inv"></ul>
+      <form class="sim-form" data-form="inv" novalidate>
+        <h3>Crea una factura de prueba</h3>
+        <div class="field"><label for="fi-cliente">Cliente</label><input id="fi-cliente" name="cliente" type="text" required placeholder="Ej: Carpintería Ruiz"></div>
+        <div class="field"><label for="fi-importe">Importe (€)</label><input id="fi-importe" name="importe" type="number" min="1" step="0.01" required placeholder="850"></div>
+        <div class="field"><label for="fi-venc">Vencimiento</label><select id="fi-venc" name="venc"><option value="15">Vence en 15 días</option><option value="30">Vence en 30 días</option><option value="-10">Ya vencida hace 10 días</option></select></div>
+        <button class="btn btn-primary btn-block" type="submit">Añadir factura</button>
+      </form>
+    </div>
+  </div>
+  <div id="fact-leads" role="tabpanel" aria-labelledby="tab-fact-leads" hidden>
+    <div class="sim-kpis" data-kpis="leads"></div>
+    <div class="sim-grid">
+      <ul class="sim-list" data-list="leads"></ul>
+      <form class="sim-form" data-form="leads" novalidate>
+        <h3>Añade un cliente potencial de prueba</h3>
+        <div class="field"><label for="fl-nombre">Cliente potencial</label><input id="fl-nombre" name="nombre" type="text" required placeholder="Ej: Bar La Plaza"></div>
+        <div class="field"><label for="fl-importe">Importe del presupuesto (€)</label><input id="fl-importe" name="importe" type="number" min="1" step="0.01" required placeholder="1200"></div>
+        <button class="btn btn-primary btn-block" type="submit">Añadir cliente potencial</button>
+      </form>
+    </div>
+  </div>
+  <div class="sim-log"><h3>Actividad</h3><ul data-log aria-live="polite"></ul></div>
+  <p class="sim-note">Simulación en tu navegador: no se envía ningún mensaje real ni se guarda ningún dato. Importes y clientes son de ejemplo.</p>
+</div></div>
+  <div id="demo-insp" role="tabpanel" aria-labelledby="tab-demo-insp" hidden><div class="sim" data-sim="insp">
+  <div class="sim-controls">
+    <div class="seg" role="group" aria-label="Centro de trabajo" data-centros><button type="button" data-centro="Todos" aria-pressed="true">Todos</button><button type="button" data-centro="Local Centro" aria-pressed="false">Local Centro</button><button type="button" data-centro="Obra Norte" aria-pressed="false">Obra Norte</button><button type="button" data-centro="Oficina Central" aria-pressed="false">Oficina Central</button></div>
+    <input type="search" data-search placeholder="Buscar documento (p. ej. PRL, seguro)" aria-label="Buscar documento">
+  </div>
+  <div class="sim-kpis" data-kpis></div>
+  <div class="alerts" data-alerts aria-live="polite"></div>
+  <ul class="doc-list" data-docs></ul>
+  <div class="sim-actions">
+    <button class="btn btn-primary" type="button" data-action="live">Simular inspección en vivo</button>
+    <button class="btn btn-secondary" type="button" data-action="expediente">Generar expediente 1 clic</button>
+  </div>
+  <div class="live" data-live hidden aria-live="polite"></div>
+  <div class="exp" data-exp hidden></div>
+  <p class="sim-note">Simulación en tu navegador con documentos de ejemplo: no se consulta ni se guarda ningún dato real.</p>
+</div></div>
+</div></section>
+<section class="section-tight"><div class="container"><div class="cta-band">
+  <h2>¿Te encaja? Pruébalo con tus datos</h2><p>Activa tu prueba gratuita de 7 días, sin tarjeta y sin permanencia.</p>
+  <div class="cta-actions"><a class="btn btn-primary btn-lg" href="/precios?quiero=todo#prueba">Probar gratis 7 días</a><a class="btn btn-secondary btn-lg" href="/demo">Probar demo en vivo</a></div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="/"><img src="/logo.svg" width="32" height="32" alt=""><span>OmniTech Core</span></a>
+      <p>OmniTech Core es un software de gestión empresarial con inteligencia artificial diseñado para empresas y pymes que quieren centralizar clientes, procesos, comunicación y operaciones.</p>
+    </div>
+    <nav aria-label="Producto"><p class="footer-title">Producto</p><ul>
+      <li><a href="/facturacion-y-cobros">Facturación y cobros</a></li><li><a href="/inspecciones">Inspecciones laborales</a></li>
+      <li><a href="/demo">Demo en vivo</a></li><li><a href="/precios">Precios y módulos</a></li></ul></nav>
+    <nav aria-label="Legal"><p class="footer-title">Legal</p><ul>
+      <li><a href="/privacidad.html">Política de privacidad</a></li><li><a href="/terminos.html">Términos</a></li><li><a href="/cookies.html">Cookies</a></li></ul></nav>
+    <div><p class="footer-title">Contacto</p><ul>
+      <li><a href="https://wa.me/34677966378">WhatsApp</a></li><li>hola@omnitechcore.com</li><li><a href="/precios#prueba">Probar gratis 7 días</a></li></ul></div>
+  </div>
+  <div class="container footer-bottom">© <span id="year">2026</span> OmniTech Core. Todos los derechos reservados.</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>
