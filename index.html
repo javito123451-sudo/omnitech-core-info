@@ -1193,19 +1193,14 @@
       <div class="card lead-card reveal">
         <div class="form-msg" id="formSuccess" role="status">
           <svg class="icon" width="18" height="18"><use href="#i-check"/></svg>
-          <span>¡Gracias! Hemos recibido tu solicitud y te contactaremos muy pronto.</span>
+          <span>¡Solicitud recibida! Revisaremos tus necesidades y contactaremos contigo para preparar una propuesta personalizada. Este formulario no crea una cuenta ni activa servicios.</span>
         </div>
         <div class="form-msg" id="formError" role="alert">
           <svg class="icon" width="18" height="18"><use href="#i-x"/></svg>
           <span>Revisa los campos obligatorios antes de enviar.</span>
         </div>
 
-        <!--
-          Formulario de diagnostico empresarial — estructura preparada para
-          conectar con el sistema de captacion de OmniTech Core. Sustituir
-          el manejador de submit en el JS por la llamada real al endpoint
-          / API cuando este disponible.
-        -->
+        <!-- Formulario público de captación. Solo registra un lead para revisión comercial manual. -->
         <form id="leadForm" data-diagnostico novalidate>
           <div class="field-row">
             <div class="field">
@@ -1231,6 +1226,20 @@
             <label for="lf-necesidad">Cuéntanos tu reto operativo <span class="req">*</span></label>
             <textarea id="lf-necesidad" name="necesidad" required placeholder="Ej: Pierdo leads por WhatsApp, no hago seguimiento..."></textarea>
           </div>
+          <fieldset class="field" style="border:0;padding:0;margin:0 0 18px;">
+            <legend style="font-size:13px;font-weight:600;color:var(--text-secondary);margin-bottom:9px;">¿Qué áreas te gustaría valorar? <span style="color:var(--text-faint);font-weight:400;">(opcional, puedes elegir varias)</span></legend>
+            <div class="interest-grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;">
+              <label class="interest-option"><input type="checkbox" name="intereses" value="CRM y gestión de clientes"> CRM y gestión de clientes</label>
+              <label class="interest-option"><input type="checkbox" name="intereses" value="Presupuestos y facturación"> Presupuestos y facturación</label>
+              <label class="interest-option"><input type="checkbox" name="intereses" value="Agenda y gestión de servicios"> Agenda y gestión de servicios</label>
+              <label class="interest-option"><input type="checkbox" name="intereses" value="WhatsApp y comunicación"> WhatsApp y comunicación</label>
+              <label class="interest-option"><input type="checkbox" name="intereses" value="Automatizaciones e IA"> Automatizaciones e IA</label>
+              <label class="interest-option"><input type="checkbox" name="intereses" value="Ventas, pipeline y marketing"> Ventas, pipeline y marketing</label>
+              <label class="interest-option"><input type="checkbox" name="intereses" value="Gestión de equipos o varias sedes"> Gestión de equipos o varias sedes</label>
+              <label class="interest-option"><input type="checkbox" name="intereses" value="Solución personalizada / aún no lo sé"> Solución personalizada / aún no lo sé</label>
+            </div>
+            <p style="font-size:12px;color:var(--text-faint);margin-top:9px;">Son solo preferencias iniciales, no paquetes cerrados ni una contratación. La configuración se definirá contigo después de revisar tu caso.</p>
+          </fieldset>
           <div class="form-foot">
             <input type="checkbox" id="lf-privacidad" name="privacidad" required>
             <label for="lf-privacidad">He leído y acepto la <a href="privacidad.html" style="text-decoration:underline;">política de privacidad</a> de OmniTech Core. <span class="req">*</span></label>
@@ -1336,9 +1345,8 @@
     revealEls.forEach(el => el.classList.add('in'));
   }
 
-  // Formulario de lead — captación real, misma API que el resto del backend
-  // de OmniTech Core (Render). Antes solo hacía console.log(payload): las
-  // solicitudes se perdían, nadie las recibía.
+  // Formulario público de captación: crea únicamente un lead para revisión comercial manual.
+  // No crea usuarios, workspaces, licencias, créditos ni activa módulos.
   var LEAD_API_URL = 'https://omnitech-core-api.onrender.com/api/leads-public/diagnostico';
 
   function sleep(ms) { return new Promise(function (resolve) { setTimeout(resolve, ms); }); }
@@ -1401,7 +1409,12 @@
       empresa: formData.get('empresa'),
       email: formData.get('email'),
       telefono: formData.get('telefono') || undefined,
-      necesidad: formData.get('necesidad'),
+      necesidad: [
+        formData.get('necesidad'),
+        formData.getAll('intereses').length
+          ? 'Áreas de interés orientativas: ' + formData.getAll('intereses').join(', ')
+          : ''
+      ].filter(Boolean).join('\n\n'),
     };
 
     leadSubmitBtn.disabled = true;
